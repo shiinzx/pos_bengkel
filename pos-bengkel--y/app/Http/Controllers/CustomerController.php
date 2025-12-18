@@ -18,9 +18,22 @@ class CustomerController extends Controller
         return view('customers.create');
     }
 
-    public function store(Request $r) {
-        Customer::create($r->all());
-        return redirect()->route('customers.index')->with('success', 'Customer berhasil ditambahkan');
+    public function store(Request $r)
+    {
+        $r->validate([
+            'nama'   => 'required|string|max:255',
+            'no_hp'  => 'required|string|max:20',
+            'alamat' => 'nullable|string',
+        ]);
+
+        Customer::create([
+            'nama'   => $r->nama,
+            'no_hp'  => $r->no_hp,
+            'alamat' => $r->alamat,
+        ]);
+
+        return redirect()->route('customers.index')
+            ->with('success', 'Customer berhasil ditambahkan');
     }
 
     public function edit(Customer $customer) {

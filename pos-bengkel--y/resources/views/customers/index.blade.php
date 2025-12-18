@@ -43,9 +43,9 @@
                 @forelse ($customers as $c)
                     <tr class="hover:bg-gray-800/60 transition">
                         <td class="py-4 px-4 border-b border-gray-700">{{ $loop->iteration }}</td>
-                        <td class="py-4 px-4 border-b border-gray-700 font-semibold">{{ $c->name }}</td>
-                        <td class="py-4 px-4 border-b border-gray-700">{{ $c->phone }}</td>
-                        <td class="py-4 px-4 border-b border-gray-700">{{ $c->address }}</td>
+                        <td class="py-4 px-4 border-b border-gray-700 font-semibold">{{ $c->nama }}</td>
+                        <td class="py-4 px-4 border-b border-gray-700">{{ $c->no_hp }}</td>
+                        <td class="py-4 px-4 border-b border-gray-700">{{ $c->alamat }}</td>
                         <td class="py-4 px-4 border-b border-gray-700 text-center flex justify-center gap-2">
 
                             {{-- DETAIL --}}

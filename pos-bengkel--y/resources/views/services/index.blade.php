@@ -44,8 +44,8 @@
                 @forelse ($services as $s)
                     <tr class="hover:bg-gray-800/60 transition">
                         <td class="py-4 px-4 border-b border-gray-700">{{ $loop->iteration }}</td>
-                        <td class="py-4 px-4 border-b border-gray-700 font-semibold">{{ $s->name }}</td>
-                        <td class="py-4 px-4 border-b border-gray-700">Rp {{ number_format($s->price, 0, ',', '.') }}</td>
+                        <td class="py-4 px-4 border-b border-gray-700 font-semibold">{{ $s->nama }}</td>
+                        <td class="py-4 px-4 border-b border-gray-700">Rp {{ number_format($s->harga, 0, ',', '.') }}</td>
                         <td class="py-4 px-4 border-b border-gray-700">{{ $s->description }}</td>
                         <td class="py-4 px-4 border-b border-gray-700 text-center">
                             <a href="{{ route('services.edit', $s->id) }}"

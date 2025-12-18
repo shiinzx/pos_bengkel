@@ -19,9 +19,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
         <div class="col-span-1 bg-gray-800 shadow-lg rounded-2xl p-6 border border-gray-700">
             <h2 class="text-xl font-bold mb-4 text-blue-300">Identitas Customer 👤</h2>
-            <p class="mb-2"><span class="font-semibold text-gray-400">Nama:</span> {{ $customer->name }}</p>
-            <p class="mb-2"><span class="font-semibold text-gray-400">Telp:</span> {{ $customer->phone }}</p>
-            <p class="mb-2"><span class="font-semibold text-gray-400">Alamat:</span> {{ $customer->address }}</p>
+            <p class="mb-2"><span class="font-semibold text-gray-400">Nama:</span> {{ $customer->nama }}</p>
+            <p class="mb-2"><span class="font-semibold text-gray-400">Telp:</span> {{ $customer->no_hp }}</p>
+            <p class="mb-2"><span class="font-semibold text-gray-400">Alamat:</span> {{ $customer->alamat }}</p>
         </div>
 
         <div class="col-span-2 bg-gray-800 shadow-lg rounded-2xl p-6 border border-gray-700">
